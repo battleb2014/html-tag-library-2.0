@@ -8,12 +8,13 @@
 }
 
 .header {
-  padding: 3em;
+  padding: 5em;
   text-align: center;
-  background-color: lightblue;
+  background-color: #fff;
+  background-image: linear-gradient( #fff, #c1c1c1 );
 }
 
 .header input {
   float: right;
-  justify-items: center;
+  padding: .5em;
 }
