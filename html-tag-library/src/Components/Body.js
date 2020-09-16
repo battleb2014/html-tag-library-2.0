@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import AudioVideo from './Nav/AudioVideo';
 import Basic from './Nav/Basic';
 import Formatting from './Nav/Formatting';
@@ -18,50 +18,23 @@ import Tables from './Nav/Tables';
 const Body = () => {
     return (
         <div className='body'>
-            <Router className='main'>
-                <Route exact path='/'>
-                    <Landing />
-                </Route>
-                <Route exact path='/fullList'>
-                    <FullList />
-                </Route>
-                <Route exact path='/basic'>
-                    <Basic />
-                </Route>
-                <Route exact path='/formatting'>
-                    <Formatting />
-                </Route>
-                <Route exact path='/formsAndInputs'>
-                    <FormsAndInputs />
-                </Route>
-                <Route exact path='/frames'>
-                    <Frames />
-                </Route>
-                <Route exact path='/images'>
-                    <Images />
-                </Route>
-                <Route exact path='/audioVideo'>
-                    <AudioVideo />
-                </Route>
-                <Route exact path='/links'>
-                    <Links />
-                </Route>
-                <Route exact path='/lists'>
-                    <Lists />
-                </Route>
-                <Route exact path='/tables'>
-                    <Tables />
-                </Route>
-                <Route exact path='/stylesAndSemantics'>
-                    <StylesAndSemantics />
-                </Route>
-                <Route exact path='/meta'>
-                    <Meta />
-                </Route>
-                <Route exact path='/programming'>
-                    <Programming />
-                </Route>
-            </Router>
+            <Switch className='main'>
+                <Route exact path='/' component={Landing} />
+                <Route path='/fullList' component={FullList} />
+                <Route path='/basic' component={Basic} />
+                <Route path='/formatting' component={Formatting} />
+                <Route path='/formsAndInputs' component={FormsAndInputs} />
+                <Route path='/frames' component={Frames} />
+                <Route path='/images' component={Images} />
+                <Route path='/audioVideo' component={AudioVideo} />
+                <Route path='/links' component={Links} />
+                <Route path='/lists' component={Lists} />
+                <Route path='/tables' component={Tables} />
+                <Route path='/stylesAndSemantics' component={StylesAndSemantics} />
+                <Route path='/meta' component={Meta} />
+                <Route path='/programming' component={Programming} />
+                <Route exact path="/" render={() => <div><h1 className='error'>404</h1></div>} />
+            </Switch>
         </div>
     );
 }
