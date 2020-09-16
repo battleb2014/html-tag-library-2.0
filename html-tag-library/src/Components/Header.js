@@ -1,4 +1,5 @@
 import React from 'react';
+import NavBar from './NavBar';
 
 const Header = () => {
     return (
@@ -7,6 +8,7 @@ const Header = () => {
             <div className='search'>
                 <input type='text' placeholder='search'></input>
                 <a href='#' className='magnifying-glass'><span>&#128269;</span></a>
+                <NavBar />
             </div>
         </div>
     );

@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import NavBar from './NavBar';
 import AudioVideo from './Nav/AudioVideo';
 import Basic from './Nav/Basic';
 import Formatting from './Nav/Formatting';
@@ -19,10 +18,9 @@ import Tables from './Nav/Tables';
 const Body = () => {
     return (
         <div className='body'>
-            <NavBar />
             <Router className='main'>
                 <Switch>
-                    <Route path='/'>
+                    <Route exact path='/'>
                         <Landing />
                     </Route>
                     <Route exact path='/fullList'>
