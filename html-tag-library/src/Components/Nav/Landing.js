@@ -18,12 +18,12 @@ const Landing = () => {
         url = `${noon}`;
     } else if (hours >= 17 && hours <= 24) {
         greet = 'Good Evening';
-        url = "'./Images/night.svg'";
+        url = './Images/night.svg';
     };
 
     return (
         <div className='landing' styles={{
-            backgroundImage: `url(${noon})`
+            backgroundImage: "url(./Images/night.svg)"
         }}>
             <h1 className='greeting'>{greet}</h1>
         </div >

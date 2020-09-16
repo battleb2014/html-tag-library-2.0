@@ -19,50 +19,48 @@ const Body = () => {
     return (
         <div className='body'>
             <Router className='main'>
-                <Switch>
-                    <Route exact path='/'>
-                        <Landing />
-                    </Route>
-                    <Route exact path='/fullList'>
-                        <FullList />
-                    </Route>
-                    <Route exact path='/basic'>
-                        <Basic />
-                    </Route>
-                    <Route exact path='/formatting'>
-                        <Formatting />
-                    </Route>
-                    <Route exact path='/formsAndInputs'>
-                        <FormsAndInputs />
-                    </Route>
-                    <Route exact path='/frames'>
-                        <Frames />
-                    </Route>
-                    <Route exact path='/images'>
-                        <Images />
-                    </Route>
-                    <Route exact path='/audioVideo'>
-                        <AudioVideo />
-                    </Route>
-                    <Route exact path='/links'>
-                        <Links />
-                    </Route>
-                    <Route exact path='/lists'>
-                        <Lists />
-                    </Route>
-                    <Route exact path='/tables'>
-                        <Tables />
-                    </Route>
-                    <Route exact path='/stylesAndSemantics'>
-                        <StylesAndSemantics />
-                    </Route>
-                    <Route exact path='/meta'>
-                        <Meta />
-                    </Route>
-                    <Route exact path='/programming'>
-                        <Programming />
-                    </Route>
-                </Switch>
+                <Route exact path='/'>
+                    <Landing />
+                </Route>
+                <Route exact path='/fullList'>
+                    <FullList />
+                </Route>
+                <Route exact path='/basic'>
+                    <Basic />
+                </Route>
+                <Route exact path='/formatting'>
+                    <Formatting />
+                </Route>
+                <Route exact path='/formsAndInputs'>
+                    <FormsAndInputs />
+                </Route>
+                <Route exact path='/frames'>
+                    <Frames />
+                </Route>
+                <Route exact path='/images'>
+                    <Images />
+                </Route>
+                <Route exact path='/audioVideo'>
+                    <AudioVideo />
+                </Route>
+                <Route exact path='/links'>
+                    <Links />
+                </Route>
+                <Route exact path='/lists'>
+                    <Lists />
+                </Route>
+                <Route exact path='/tables'>
+                    <Tables />
+                </Route>
+                <Route exact path='/stylesAndSemantics'>
+                    <StylesAndSemantics />
+                </Route>
+                <Route exact path='/meta'>
+                    <Meta />
+                </Route>
+                <Route exact path='/programming'>
+                    <Programming />
+                </Route>
             </Router>
         </div>
     );

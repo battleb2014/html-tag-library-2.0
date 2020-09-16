@@ -4,7 +4,9 @@ import logo from './Images/logo.png';
 const Footer = () => {
     return (
         <div className='footer'>
-            <h4>&#9400; Code_<span class='red'>Fu</span> <img src={logo} alt='logo' /> 2020</h4>
+            <div className='container'>
+                <h4>&#9400; Code_<span class='red'>Fu</span> <img src={logo} alt='logo' /> 2020</h4>
+            </div>
         </div>
     );
 }

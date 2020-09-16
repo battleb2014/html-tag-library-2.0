@@ -1,4 +1,4 @@
-html {
+* {
   margin: 0;
   padding: 0;
 }
@@ -12,13 +12,18 @@ html {
   border-bottom: solid 5px #b3b3b3;
 }
 
+.wrap {
+  padding-top: 3em;
+}
+
 .header input {
-  float: right;
+  float: left;
   padding: 0.5em;
 }
 
 .search {
   float: right;
+  top: 0;
 }
 
 .magnifying-glass {
@@ -70,26 +75,20 @@ button:hover {
 
 /* Landing page */
 .landing {
-  position: absolute;
+  text-align: center;
   margin: 0;
   padding: 0;
-  height: auto;
+  height: 61vh;
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .image {
-  position: relative;
   width: 100vw;
   height: 60vh;
-  overflow: hidden;
 }
 
-.greeting {
-  position: relative;
-  z-index: 1;
-}
 
 /* Full List */
 .fullList {
@@ -214,10 +213,14 @@ button:hover {
 
 /* Footer */
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   justify-items: center;
   bottom: 0;
   height: 5vh;
+  line-height: 5vh;
   width: 100vw;
   background-color: #fff;
   background-image: linear-gradient( #c1c1c1, #fff );
