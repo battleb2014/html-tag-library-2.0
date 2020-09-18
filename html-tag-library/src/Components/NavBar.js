@@ -7,70 +7,75 @@ const NavBar = () => {
         <div classname='navBar'>
             <nav>
                 <ul>
+                    <Link to='/'>
+                        <button>
+                            Home
+                        </button>
+                    </Link>
                     <Link to='/fullList'>
                         <button>
                             Full List
-                                </button>
+                        </button>
                     </Link>
                     <Link to='/basic'>
                         <button>
                             Basic
-                                </button>
+                        </button>
                     </Link>
                     <Link to='/formatting'>
                         <button>
                             Formatting
-                                </button>
+                        </button>
                     </Link>
                     <Link to='/formsAndInputs'>
                         <button>
                             Forms and Inputs
-                                </button>
+                        </button>
                     </Link>
                     <Link to='/frames'>
                         <button>
                             Frames
-                                </button>
+                        </button>
                     </Link>
                     <Link to='/images'>
                         <button>
                             Images
-                                </button>
+                        </button>
                     </Link>
                     <Link to='/audioVideo'>
                         <button>
                             Audio/Video
-                                </button>
+                        </button>
                     </Link>
                     <Link to='/links'>
                         <button>
                             Links
-                                </button>
+                        </button>
                     </Link>
                     <Link to='/lists'>
                         <button>
                             Lists
-                                </button>
+                        </button>
                     </Link>
                     <Link to='/tables'>
                         <button>
                             Tables
-                                </button>
+                        </button>
                     </Link>
                     <Link to='/stylesAndSemantics'>
                         <button>
                             Styles and Semantics
-                                </button>
+                        </button>
                     </Link>
                     <Link to='/meta'>
                         <button>
                             Meta
-                                </button>
+                        </button>
                     </Link>
                     <Link to='/programming'>
                         <button>
                             Programming
-                                </button>
+                        </button>
                     </Link>
                 </ul>
             </nav>

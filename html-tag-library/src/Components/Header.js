@@ -6,10 +6,6 @@ const Header = () => {
         <div className='header'>
             <div className='wrap'>
                 <h1>Complete Html Tag Library</h1>
-                <div className='search'>
-                    <input type='text' placeholder='search'></input>
-                    <a href='#' className='magnifying-glass'><span>&#128269;</span></a>
-                </div>
                 <NavBar />
             </div>
         </div>

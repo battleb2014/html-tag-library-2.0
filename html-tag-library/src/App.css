@@ -16,31 +16,13 @@
   padding-top: 3em;
 }
 
-.header input {
-  float: left;
-  padding: 0.5em;
-}
-
-.search {
-  float: right;
-  top: 0;
-}
-
-.magnifying-glass {
-  height: 2em;
-  width: 2em;
-  padding-left: 0.5em;
-  float: right;
-  text-decoration: none;
-}
-
 /* NavBar */
 .navBar {
   display: inline-flex;
 }
 
 button {
-  width: 12em;
+  width: 11em;
   margin: 2em 5px 5em;
   padding: 0.5em;
   border-radius: 3px 20px 3px;
@@ -63,10 +45,10 @@ button:hover {
 
 /* Body */
 .body {
-  height: 80vh;
+  height: 55vh;
+  margin-top: .5em;
   position: absolute;
   text-align: center;
-  justify-content: center;
 }
 
 .main {
@@ -75,20 +57,45 @@ button:hover {
 
 /* Landing page */
 .landing {
+  width: 100vw;
+  height: 80vh;
+  position: absolute;
   text-align: center;
-  margin: 0;
-  padding: 0;
-  height: 61vh;
-  overflow: hidden;
+}
+
+.landing h1 {
+  position: absolute;
+  justify-items: center;
+  margin: 30vh 45vw;
+}
+
+.morning {
+  position: relative;
+  height: 80vh;
+  width: 100vw;
+  background-image: url('./Images/morning.svg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.image {
+.noon {
+  position: relative;
+  height: 70vh;
   width: 100vw;
-  height: 60vh;
+  background-image: url('./Images/noon.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+.evening {
+  color: white;
+  position: relative;
+  height: 80vh;
+  width: 100vw;
+  background-image: url('./Images/night.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 /* Full List */
 .fullList {

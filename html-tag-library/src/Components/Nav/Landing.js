@@ -1,32 +1,42 @@
-import React from 'react';
-import noon from './Images/noon.svg';
+import React, { Component } from 'react';
 
 const Landing = () => {
 
-    var date = new Date();
-    var hours = date.getHours();
+    function Content() {
+        var date = new Date();
+        var hours = date.getHours();
 
+        function Morning() {
+            return <div className='morning'>
+                <h1>Good morning and welcome to the Library!</h1>
+            </div>;
+        }
 
-    var greet;
-    var url;
+        function Noon() {
+            return <div className='noon'>
+                <h1>Good afternoon and welcome to the Library!</h1>
+            </div>;
+        }
 
-    if (hours < 12) {
-        greet = 'Good Morning';
-        url = "'./Images/morning.svg'";
-    } else if (hours >= 12 && hours <= 17) {
-        greet = 'Good Afternoon';
-        url = `${noon}`;
-    } else if (hours >= 17 && hours <= 24) {
-        greet = 'Good Evening';
-        url = './Images/night.svg';
-    };
+        function Evening() {
+            return <div className='evening'>
+                <h1>Good evening and welcome to the Library!</h1>
+            </div>;
+        }
+
+        if (hours < 12) {
+            return <Morning />;
+            // } else if (hours >= 12 && hours <= 17) {
+            //     return <Noon />
+        } else if (hours >= 12 && hours <= 24) {
+            return <Evening />
+        }
+    }
 
     return (
-        <div className='landing' styles={{
-            backgroundImage: "url(./Images/night.svg)"
-        }}>
-            <h1 className='greeting'>{greet}</h1>
-        </div >
+        <div className='landing'>
+            <Content />
+        </div>
     );
 }
 
