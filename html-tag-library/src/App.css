@@ -78,11 +78,13 @@ button:hover {
 .landing h1 {
   position: absolute;
   justify-items: center;
+  width: 20vw;
   margin: 30vh 45vw;
 }
 
 .morning {
   position: relative;
+  top: -.5em;
   height: 80vh;
   width: 100vw;
   background-image: url('./Images/morning.svg');
@@ -92,7 +94,9 @@ button:hover {
 
 .noon {
   position: relative;
-  height: 70vh;
+  margin-top: -0.5em;
+  margin-right: -2em;
+  height: 80vh;
   width: 100vw;
   background-image: url('./Images/noon.svg');
   background-size: cover;

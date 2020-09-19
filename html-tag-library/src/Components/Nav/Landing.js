@@ -8,7 +8,7 @@ const Landing = () => {
 
         function Morning() {
             return <div className='morning'>
-                <h1>Good morning and welcome to the Library!</h1>
+                <h1>Good morning and welcome to the Library.</h1>
             </div>;
         }
 
