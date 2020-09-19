@@ -3,6 +3,18 @@
   padding: 0;
 }
 
+@media only screen and (max-width: 640px) {
+
+}
+
+@media only screen and (min-width: 641) and (max-width: 1007px) {
+
+}
+
+@media only screen and (min-width: 1008px) {
+
+}
+
 /* Header */
 .header {
   height: 15vh;
@@ -90,6 +102,7 @@ button:hover {
 .evening {
   color: white;
   position: relative;
+  top: -0.5em;
   height: 80vh;
   width: 100vw;
   background-image: url('./Images/night.svg');

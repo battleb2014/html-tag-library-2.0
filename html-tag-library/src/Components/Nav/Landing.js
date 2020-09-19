@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const Landing = () => {
 
@@ -26,9 +26,11 @@ const Landing = () => {
 
         if (hours < 12) {
             return <Morning />;
-            // } else if (hours >= 12 && hours <= 17) {
-            //     return <Noon />
-        } else if (hours >= 12 && hours <= 24) {
+        }
+        else if (hours >= 12 && hours <= 17) {
+            return <Noon />
+        }
+        else if (hours >= 17 && hours <= 24) {
             return <Evening />
         }
     }
