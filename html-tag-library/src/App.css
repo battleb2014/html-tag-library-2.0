@@ -2,15 +2,11 @@
   margin: 0;
   padding: 0;
 }
-html {
-  height: 100vh;
-  width: 100vw;
-}
 
 @media only screen and (max-width: 640px) {
   /* Header */
 .header {
-  height: 20vh;
+  height: 27vh;
   text-align: center;
   background-color: #fff;
   background-image: linear-gradient( #fff, #c1c1c1 );
@@ -46,7 +42,7 @@ button:hover {
 
 /* Body */
 .body {
-  height: 75vh;
+  height: 69vh;
   margin-top: 0.5em;
   position: absolute;
   text-align: center;
@@ -59,7 +55,7 @@ button:hover {
 /* Landing page */
 .landing {
   width: 100vw;
-  height: 75vh;
+  height: 69vh;
   position: absolute;
   text-align: center;
 }
@@ -74,7 +70,7 @@ button:hover {
 .morning {
   position: relative;
   top: -.5em;
-  height: 75vh;
+  height: 69vh;
   width: 100vw;
   background-image: url('./Images/morning.svg');
   background-size: cover;
@@ -85,7 +81,7 @@ button:hover {
   position: relative;
   margin-top: -0.5em;
   margin-right: -2em;
-  height: 75vh;
+  height: 69vh;
   width: 100vw;
   background-image: url('./Images/noon.svg');
   background-size: cover;
@@ -96,7 +92,7 @@ button:hover {
   color: white;
   position: relative;
   top: -0.5em;
-  height: 75vh;
+  height: 69vh;
   width: 100vw;
   background-image: url('./Images/night.svg');
   background-size: cover;
@@ -232,12 +228,16 @@ button:hover {
   position: fixed;
   justify-items: center;
   bottom: 0;
-  height: 5vh;
-  line-height: 5vh;
+  height: 4vh;
+  line-height: 4vh;
   width: 100vw;
   background-color: #fff;
   background-image: linear-gradient( #c1c1c1, #fff );
   border-top: solid 5px #b3b3b3;
+}
+
+.container {
+  margin-bottom: 1.5em;
 }
 
 .footer h4 {
