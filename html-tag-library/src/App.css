@@ -6,7 +6,7 @@
 @media only screen and (max-width: 640px) {
   /* Header */
 .header {
-  height: 27vh;
+  height: 30vh;
   text-align: center;
   background-color: #fff;
   background-image: linear-gradient( #fff, #c1c1c1 );
@@ -42,7 +42,7 @@ button:hover {
 
 /* Body */
 .body {
-  height: 69vh;
+  height: 66vh;
   margin-top: 0.5em;
   position: absolute;
   text-align: center;
