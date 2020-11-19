@@ -55,7 +55,7 @@ button:hover {
 /* Landing page */
 .landing {
   width: 100vw;
-  height: 69vh;
+  height: 66vh;
   position: absolute;
   text-align: center;
 }
@@ -70,7 +70,7 @@ button:hover {
 .morning {
   position: relative;
   top: -.5em;
-  height: 69vh;
+  height: 66vh;
   width: 100vw;
   background-image: url('./Images/morning.svg');
   background-size: cover;
@@ -81,7 +81,7 @@ button:hover {
   position: relative;
   margin-top: -0.5em;
   margin-right: -2em;
-  height: 69vh;
+  height: 66vh;
   width: 100vw;
   background-image: url('./Images/noon.svg');
   background-size: cover;
@@ -92,7 +92,7 @@ button:hover {
   color: white;
   position: relative;
   top: -0.5em;
-  height: 69vh;
+  height: 66vh;
   width: 100vw;
   background-image: url('./Images/night.svg');
   background-size: cover;
